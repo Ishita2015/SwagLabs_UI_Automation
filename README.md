@@ -1,12 +1,12 @@
 # SwagLabs_Automation
 
-This project aims to login into SwagLabs site and add the highest price item into cart and performe some below steps:
+This project aims to login into SwagLabs site and add the highest price item into cart and perform below steps:
 
-1. Login to https://www.saucedemo.com/ using username "standard_user" and password "secret_sauce".
+1. Login to https://www.saucedemo.com/ using username and password.
 
 2. Click on Open Menu button on the top left corner (Its a small box with 3 lines).
 
-3. Select ' About'.
+3. Select 'About'.
 
 4. Check if user is taken to https://saucelabs.com/ site
 
