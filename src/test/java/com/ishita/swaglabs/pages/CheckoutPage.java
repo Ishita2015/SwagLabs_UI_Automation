@@ -13,6 +13,8 @@ public class CheckoutPage {
 	@FindBy(id="last-name") WebElement lastNameTextbox;
 	@FindBy(id="postal-code") WebElement zipCodeTextbox;
 	@FindBy(id="continue") WebElement continueButton;
+	@FindBy(id="finish") WebElement finishButton;
+	
 	
 	public void enterFirstName() throws IOException {
 		firstNameTextbox.sendKeys(PropertyReader.configReader("firstname"));
@@ -29,5 +31,9 @@ public class CheckoutPage {
 	public void clickToContinueButton() {
 		continueButton.click();
 	}	
+	
+	public void clickToFinishButton() {
+		finishButton.click();
+	}
 	
 }

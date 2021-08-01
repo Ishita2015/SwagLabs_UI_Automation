@@ -15,6 +15,7 @@ import com.ishita.swaglabs.library.PropertyReader;
 
 public class TC001_MainTestCase extends BaseMethods {
 	
+	private static final String ORDER_CONFIRMATION_TEXT = "//h2[contains(text(), 'THANK YOU FOR YOUR ORDER')]";
 	private static final String TOTAL_PRICE = "//div[@class='summary_total_label']";
 	private static final String CHEKOUT_TEXT = "//span[@class='title']";
 	private static final String ITEM_LIST = "//div[@class='inventory_container']/div/div/div[2]/div[2]/div";
@@ -95,4 +96,11 @@ public class TC001_MainTestCase extends BaseMethods {
 		int index = totalPriceFormat.indexOf("$");
 		Assert.assertEquals(totalPriceFormat.substring(0,index+1), "Total: $");
 	}	 
+	
+	@Test (priority=7)
+	public void finishOrderAndValidateOrderAtCheckoutPage() throws InterruptedException, IOException {
+		checkout.clickToFinishButton();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(ORDER_CONFIRMATION_TEXT)));
+		Assert.assertEquals(driver.findElement(By.xpath(ORDER_CONFIRMATION_TEXT)).getText(), PropertyReader.configReader("order_confirmation_text"));
+	 }
 }

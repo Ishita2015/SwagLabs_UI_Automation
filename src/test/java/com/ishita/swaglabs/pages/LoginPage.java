@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.ishita.swaglabs.base.BaseMethods;
-import com.ishita.swaglabs.library.PropertyReader;
 
 public class LoginPage extends BaseMethods {
 
