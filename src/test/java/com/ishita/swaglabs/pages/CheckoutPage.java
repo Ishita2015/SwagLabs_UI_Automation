@@ -5,10 +5,16 @@ import java.io.IOException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.ishita.swaglabs.library.PageActions;
 import com.ishita.swaglabs.library.PropertyReader;
 
 public class CheckoutPage {
 
+	public PageActions action;
+	public CheckoutPage() {
+		action = new PageActions();
+	}
+	
 	@FindBy(id="first-name") WebElement firstNameTextbox;
 	@FindBy(id="last-name") WebElement lastNameTextbox;
 	@FindBy(id="postal-code") WebElement zipCodeTextbox;
@@ -17,23 +23,23 @@ public class CheckoutPage {
 	
 	
 	public void enterFirstName() throws IOException {
-		firstNameTextbox.sendKeys(PropertyReader.configReader("firstname"));
+		action.enterDataIntoTextBox(firstNameTextbox, PropertyReader.configReader("firstname"));
 	}
 	
 	public void enterLastName() throws IOException {
-		lastNameTextbox.sendKeys(PropertyReader.configReader("lastname"));
+		action.enterDataIntoTextBox(lastNameTextbox, PropertyReader.configReader("lastname"));
 	}
 	
 	public void enterZipCodee() throws IOException {
-		zipCodeTextbox.sendKeys(PropertyReader.configReader("zipcode"));
+		action.enterDataIntoTextBox(zipCodeTextbox, PropertyReader.configReader("zipcode"));
 	}
 	
 	public void clickToContinueButton() {
-		continueButton.click();
+		action.clickButton(continueButton);
 	}	
 	
 	public void clickToFinishButton() {
-		finishButton.click();
+		action.clickButton(finishButton);
 	}
 	
 }

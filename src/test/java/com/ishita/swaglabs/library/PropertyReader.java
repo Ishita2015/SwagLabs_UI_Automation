@@ -13,6 +13,5 @@ public class PropertyReader {
 		Properties prop = new Properties();
 		prop.load(fr);
 		return prop.get(key).toString();
-	}
-	
+	}	
 }
