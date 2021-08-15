@@ -14,7 +14,7 @@ Steps:
 
 5. Click on browser back button and Validate if you are taken back to saucedemo PRODUCTS page.
 
-6. CLick on Filter and select 'High to Low' then add the first item (which has the highest price) and add it to the cart. Repeat the same using filter 'Low to High'.
+6. Click on Filter and select 'High to Low' then add the first item (which has the highest price) to the cart. Repeat the same using filter 'Low to High' for adding the lowest price item into the cart.
 
 7. Click on the Cart button available at the top right corner.
 
