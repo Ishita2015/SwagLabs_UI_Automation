@@ -1,6 +1,6 @@
 # SwagLabs_Automation
 
-This project aims to login into SwagLabs site and add the highest price item from available items into the cart and place the order.
+This project aims to login into SwagLabs site, add the highest price item from available items into the cart and place the order.
 
 Steps:
 
