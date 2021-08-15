@@ -14,7 +14,7 @@ Steps:
 
 5. Click on browser back button and Validate if you are taken back to saucedemo PRODUCTS page.
 
-6. Select the item with highest price (The code should dynamically select the highest priced product) and add it to the cart.
+6. CLick on Filter and select 'High to Low' then add the first item (which has the highest price) and add it to the cart. Repeat the same using filter 'Low to High'.
 
 7. Click on the Cart button available at the top right corner.
 
