@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import com.ishita.swaglabs.base.BaseMethods;
 import com.ishita.swaglabs.library.PropertyReader;
 
+/**
+ * This test case goes to the About page and validates if you are taken back to the PRODUCTS page.
+ *
+ */
+
 public class TC002_GoToAbout extends BaseMethods {
 
 	private static final String PRODUCTS_TITLE = "//span[contains(text(), 'Products')]";

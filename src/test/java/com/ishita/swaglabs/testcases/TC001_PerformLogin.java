@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import com.ishita.swaglabs.base.BaseMethods;
 import com.ishita.swaglabs.library.PropertyReader;
 
+/**
+ * This test case performs and validates the login functionality.
+ *
+ */
+
 public class TC001_PerformLogin extends BaseMethods {
 
 	private static final String PRODUCTS_TITLE = "//span[contains(text(), 'Products')]";

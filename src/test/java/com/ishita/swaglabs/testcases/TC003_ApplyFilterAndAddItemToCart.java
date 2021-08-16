@@ -8,6 +8,11 @@ import org.testng.annotations.Test;
 import com.ishita.swaglabs.base.BaseMethods;
 import com.ishita.swaglabs.library.PropertyReader;
 
+/**
+ * This test case applies filters, adds items into the cart and validates if you are taken to the CART page.
+ *
+ */
+
 public class TC003_ApplyFilterAndAddItemToCart extends BaseMethods {
 	
 	private static final String HIGH_TO_LOW = "Price (high to low)";

@@ -10,6 +10,11 @@ import org.testng.annotations.Test;
 import com.ishita.swaglabs.base.BaseMethods;
 import com.ishita.swaglabs.library.PropertyReader;
 
+/**
+ * This test case performs checkout, places the order and validates it.
+ *
+ */
+
 public class TC004_PerformCheckoutAndConfirmOrder extends BaseMethods {
 	
 	private static final String ORDER_CONFIRMATION_TEXT = "//h2[contains(text(), 'THANK YOU FOR YOUR ORDER')]";
