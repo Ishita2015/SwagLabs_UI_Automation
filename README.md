@@ -51,4 +51,4 @@ For setup, read and follow the below instructions:
 
 3. The project will be imported and there is nothing special to do.
 
-4. Now, you can run the `testng.xml` as a TestNG suite and it adds the item into the cart and place the order.
+4. Now, you can run the `testng.xml` as a TestNG suite and it adds the item into the cart and places the order.
