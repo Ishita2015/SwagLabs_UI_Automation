@@ -1,18 +1,18 @@
 # SwagLabs_Automation
 
-This project aims to login into SwagLabs site, add the highest price item from available items into the cart and place the order.
+This project aims to login into SwagLabs site, apply filters, add the highest/lowest price items from available items into the cart and place the order.
 
 Steps:
 
 1. Login to https://www.saucedemo.com/ using username and password.
 
-2. Click on Open Menu button on the top left corner (Its a small box with 3 lines).
+2. Click on the Open Menu button on the top left corner (It's a small box with 3 lines).
 
 3. Select 'About'.
 
 4. Check if user is taken to https://saucelabs.com/ site
 
-5. Click on browser back button and Validate if you are taken back to saucedemo PRODUCTS page.
+5. Click on the browser back button and Validate if you are taken back to the saucedemo PRODUCTS page.
 
 6. Click on Filter and select 'High to Low' then add the first item (which has the highest price) to the cart. Repeat the same using filter 'Low to High' for adding the lowest price item into the cart.
 
@@ -49,6 +49,6 @@ For setup, read and follow the below instructions:
 	1. Import Project as Maven -> Existing Maven Projects
 	2. Select `SwagLabs_Automation` project folder and click finish.
 
-3. The project will be imported and nothing special to do.
+3. The project will be imported and there is nothing special to do.
 
-4. Now, you can run the `testng.xml` as TestNG suite and add the item into cart and checkout it.
+4. Now, you can run the `testng.xml` as a TestNG suite and it adds the item into the cart and place the order.
